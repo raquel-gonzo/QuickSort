@@ -1,3 +1,4 @@
+
 // Hoare's Partitioning Algo
 
 function quickSort(arr, left = 0, right = arr.length - 1) {
@@ -23,6 +24,7 @@ function partition(arr, left, right, pivot) {
             right--;
         }
     }
+    return left;
 }
 
 //Steps:
@@ -31,14 +33,8 @@ function partition(arr, left, right, pivot) {
     //Values less than the pivot got to the left (i) of the pivot. Values to the right go to the right (j) of the pivot.
 // 3) Recursively apply steps 1 and 2 to the sub-array to the left (i) of pivot, and to the sub-array to the right (j) of the pivot.
 
-
-
-
-
-
-
-
 // the time complexity of quick sort is O(n log n). (bad).
+
 // helpful links: 
 // https://www.bigocheatsheet.com/
 // https://itnext.io/a-sort-of-quick-guide-to-quicksort-and-hoares-partitioning-scheme-in-javascript-7792112c6d1
